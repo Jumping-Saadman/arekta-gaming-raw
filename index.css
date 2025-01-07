@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'Chunq';
+  src: url('assets/fonts/Chunq.ttf');
+}
+
+body {
+  background-color: black;
+}
+
+.home {
+  margin: 1px;
+  padding: auto;
+  display: block;
+  height: 100%;
+}
+
 video {
   width: 100%;
   height: 100%;
@@ -144,4 +160,51 @@ video {
 .glow:hover:after {
   filter: blur(35px);
   opacity: .9
+}
+
+/* events section css */
+
+.events {
+  margin: 1px;
+  padding: auto;
+  display: block;
+  height: auto;
+  color: white;
+}
+
+.events h1 {
+  font-family: 'Chunq';
+  color: white;
+  font-weight: 100;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card-grid {
+  display: grid;
+}
+
+.card-grid #bg-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  z-index: -1;
+  position: relative;
+  /* top: ;
+  left: 0; */
+}
+
+.card-grid #frnt-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
