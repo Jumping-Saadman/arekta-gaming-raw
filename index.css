@@ -166,7 +166,7 @@ video {
 
 .events {
   margin: 1px;
-  padding: auto;
+  padding: 70px;
   display: block;
   height: auto;
   color: white;
@@ -178,15 +178,57 @@ video {
   font-weight: 100;
 }
 
+.details {
+  padding: 10px
+}
+
+.details h2 {
+  margin: -40px 0 0;
+  font-family: 'industry-bold';
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.events h3, h4, h5 {
+  margin: 0;
+  text-align: center;
+}
+
+.events h4 {
+  font-family: 'industry-bold';
+  margin-top: 10px;
+}
+
+.events h5 {
+  font-family: 'industry-light';
+  color: rgb(185, 185, 185);
+}
+
+#prize {
+  margin: 0;
+  color: #50C878;
+}
+
 .event-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
-  padding: 20px;
+  padding: 50px;
 }
 
 .card-grid {
   display: grid;
+  position: relative;
+  transition-duration: 300ms;
+  border: #3f3f3f 1px solid;
+  border-radius: 5px;
+}
+
+.card-grid:hover {
+  transform: scale(1.5);
+  transform: translateY(-10px);
+  transition-duration: 300ms;
+  border: #50C878 1px solid;
 }
 
 .card-grid #bg-img {
@@ -195,16 +237,29 @@ video {
   object-fit: cover;
   z-index: -1;
   position: relative;
-  /* top: ;
-  left: 0; */
 }
 
 .card-grid #frnt-img {
-  width: 100%;
-  height: 200px;
+  width: 135px;
+  height: 115px;
   object-fit: cover;
   z-index: 1;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 40px;
+  left: 100px;
 }
+
+.card-grid button {
+  border: 1px solid #50C878;
+  text-align: center;
+  font-family: 'industry-bold';
+  transition-duration: 300ms;
+  margin: 0 40px 20px 40px;
+}
+
+.card-grid button:hover {
+  
+  color: black;
+  transition-duration: 300ms;
+}
+
